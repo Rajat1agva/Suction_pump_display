@@ -51,25 +51,28 @@ int main(void)
 	Set_Rotation(0);
 	
 	LETTR(176,220,0,0,image1);
-	//drawCircle(110,110,20,WHITE);
+	drawCircle(110,110,10,WHITE);
 	while (1) 
 	{for(int i=45;i<=300;i++)
-     {drawLine(110,110,110+50*cos(i*(PI/180)),110+50*sin(i*(PI/180)),RED);
-	  drawLine(110,110,110+50*cos(i*(PI/180))+1,110+50*sin(i*(PI/180))+1,RED);
-	    drawLine(110,110,110+50*cos(i*(PI/180))+2,110+50*sin(i*(PI/180))+2,RED);		
+     {drawLine(110,110,110+50*cos(i*(PI/180)),110+50*sin(i*(PI/180)),WHITE);
+	  drawLine(110,110,110+50*cos(i*(PI/180))+1,110+50*sin(i*(PI/180))+1,WHITE);
+	    	
 	  _delay_ms(10); 
 	  drawLine(110,110,110+50*cos(i*(PI/180)),110+50*sin(i*(PI/180)),BLACK);
 	   drawLine(110,110,110+50*cos(i*(PI/180))+1,110+50*sin(i*(PI/180))+1,BLACK);
-	   drawLine(110,110,110+50*cos(i*(PI/180))+2,110+50*sin(i*(PI/180))+2,BLACK);		 
+	  
+	   drawCircle(110,110,10,WHITE);
+	   		 
 	 }
 	for(int i=300;i>=45;i--)
-	{drawLine(110,110,110+50*cos(i*(PI/180)),110+50*sin(i*(PI/180)),RED);
-		drawLine(110,110,110+50*cos(i*(PI/180))+1,110+50*sin(i*(PI/180))+1,RED);
-		drawLine(110,110,110+50*cos(i*(PI/180))+2,110+50*sin(i*(PI/180))+2,RED);
+	{drawLine(110,110,110+50*cos(i*(PI/180)),110+50*sin(i*(PI/180)),WHITE);
+		drawLine(110,110,110+50*cos(i*(PI/180))+1,110+50*sin(i*(PI/180))+1,WHITE);
+		
 		_delay_ms(10);
 		drawLine(110,110,110+50*cos(i*(PI/180)),110+50*sin(i*(PI/180)),BLACK);
 		drawLine(110,110,110+50*cos(i*(PI/180))+1,110+50*sin(i*(PI/180))+1,BLACK);
-		drawLine(110,110,110+50*cos(i*(PI/180))+2,110+50*sin(i*(PI/180))+2,BLACK);
+		
+		drawCircle(110,110,10,WHITE);
 	}
     }
 
